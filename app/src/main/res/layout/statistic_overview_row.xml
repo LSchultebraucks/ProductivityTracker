@@ -1,0 +1,41 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="6dp"
+    card_view:cardCornerRadius="4dp"
+    android:id="@+id/statistic_overview_card_row">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/hour_statistics"
+            android:id="@+id/image_statistic_overview"
+            android:layout_below="@+id/text_view_statistic_overview"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hour_statistics"
+            android:textSize="22sp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:id="@+id/text_view_statistic_overview"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

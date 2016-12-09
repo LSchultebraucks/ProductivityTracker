@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/notifications">
+        <CheckBoxPreference
+            android:key="key_enable_notifications"
+            android:summary="@string/notification_summary"
+            android:title="@string/notification_allow"
+            android:defaultValue="true">
+        </CheckBoxPreference>
+        <EditTextPreference
+            android:key="key_start_notification"
+            android:summary="@string/start_notification_summary"
+            android:title="@string/start_notification"
+            android:inputType="numberDecimal"
+            android:defaultValue="9">
+        </EditTextPreference>
+        <EditTextPreference
+            android:key="key_end_notification"
+            android:summary="@string/end_notification_summary"
+            android:title="@string/end_notification"
+            android:inputType="numberDecimal"
+            android:defaultValue="17">
+        </EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/chart">
+        <CheckBoxPreference
+            android:key="key_enable_text_data"
+            android:title="@string/enable_data_text"
+            android:defaultValue="false">
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/faq">
+        <Preference
+            android:title="@string/fag_in_description">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="https://play.google.com/store/apps/details?id=net.bitdevelop.lasse.productivitytracker">
+            </intent>
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>
